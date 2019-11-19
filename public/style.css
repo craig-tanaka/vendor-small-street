@@ -16,6 +16,10 @@ button{
     font-family: 'Londrina Shadow', cursive;
     font-family: inherit;
 }
+input{
+    font-family: 'Dosis', sans-serif;
+    padding: .5em;
+}
 
 .containerIndex{
     display: flex;
@@ -27,33 +31,67 @@ button{
     box-sizing: border-box;
 }
 
-/* --------Site Brand --------- */
-.siteBrand__Header{
-    margin: 0;
-}
-.siteBrand__subtitle{
-    font-size: .9rem;
-    margin-top: -.5em;
-    margin-bottom: 2em;
-    text-align: center;
-}
-/* --------Site Brand --------- */
+/* #region Index Page */
+    /* --------Site Brand --------- */
+    .siteBrand__Header{
+        margin: 0;
+    }
+    .siteBrand__subtitle{
+        font-size: .9rem;
+        margin-top: -.5em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+    /* --------Site Brand --------- */
 
-/*  */
-.loginLinks{
-    /* display: block; */
-    text-align: center;
+    /* --------Links---------------- */
+    .loginLinks{
+        /* display: block; */
+        text-align: center;
+        margin-bottom: .25em;
+        background-color: #444141;
+        color: white;
+        padding: .5em;
+        border-radius: 3px;
+        box-shadow: 1px 1px 2px 0px #b8b0b0;
+    }
+    .loginLinks:hover,.loginLinks:focus{
+        text-decoration: underline;
+    }
+    .loginLinks:active{
+        background-color: white;
+        color: #444141;
+    }
+    /* --------Links---------------- */
+/* #endregion Index Page */
+
+/* #region Register Page */
+.formRow{
+    display: flex;
+}
+.registerForm fieldset{
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+.registerForm legend{
+    font-weight: bold;
+}
+.registerForm label{
     margin-bottom: .25em;
-    background-color: #444141;
+    display: block;
+}
+.registerForm .textInput{
+    width: 12rem;
+    margin-bottom: 1.2em;
+    border-width: 1px;
+}
+.registerForm__submit{
+    background-color: #5a5a5a;
     color: white;
-    padding: .5em;
+    padding: 1em;
     border-radius: 3px;
-    box-shadow: 1px 1px 2px 0px #b8b0b0;
+    border-width: 1px;
+    text-align: center;
 }
-.loginLinks:hover,.loginLinks:focus{
-    text-decoration: underline;
-}
-.loginLinks:active{
-    background-color: white;
-    color: #444141;
-}
+
+/* #endregion Register Page */

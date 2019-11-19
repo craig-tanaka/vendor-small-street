@@ -28,28 +28,41 @@
     </header>
 
     <main>
-        <form onsubmit="onRegisterSubmit" class="registerForm">
-            <div>
-                <label for="username">Vendor Name: <abbr title="required" aria-label="required"> * </abbr></label>
-                <input id="username" type="text" name="username">
+        <form onsubmit="onRegisterSubmit" class="registerForm" name="registerForm">
+            <fieldset>
+                <legend>Your Details</legend>
+                <div>
+                    <label for="vendor-name">Vendor Name: <abbr title="required" aria-label="required"> *
+                        </abbr></label>
+                    <input type="text" name="vendor-name" class="textInput" required>
+                </div>
+                <div>
+                    <label for="vendor-email">Vendor Email: <abbr title="required" aria-label="required"> *
+                        </abbr></label>
+                    <input type="email" name="vendor-email" class="textInput" required>
+                </div>
+                <div>
+                    <label for="vendor-phone">Vendor Phone: <abbr title="required" aria-label="required"> *
+                        </abbr></label>
+                    <input type="tel" name="vendor-phone" class="textInput" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Password</legend>
+                <div>
+                    <label for="password">Vendor Password: <abbr title="required" aria-label="required"> *
+                        </abbr></label>
+                    <input type="password" name="password" class="textInput" required>
+                </div>
+                <div>
+                    <label for="confirm-password">Confirm Password: <abbr title="required" aria-label="required"> *
+                        </abbr></label>
+                    <input type="password" name="confirm-password" class="textInput" required>
+                </div>
+            </fieldset>
+            <div style="display: flex;justify-content: center;">
+                <input class="registerForm__submit" type="submit" value="Register">
             </div>
-            <div>
-                <label for="username">Vendor Email: <abbr title="required" aria-label="required"> * </abbr></label>
-                <input id="username" type="text" name="username">
-            </div>
-            <div>
-                <label for="username">Vendor Phone: <abbr title="required" aria-label="required"> * </abbr></label>
-                <input id="username" type="text" name="username">
-            </div>
-            <div>
-                <label for="username">Vendor Password: <abbr title="required" aria-label="required"> * </abbr></label>
-                <input id="username" type="text" name="username">
-            </div>
-            <div>
-                <label for="username">Confirm Password: <abbr title="required" aria-label="required"> * </abbr></label>
-                <input id="username" type="text" name="username">
-            </div>
-            <input type="submit" value="Register">
         </form>
     </main>
 
