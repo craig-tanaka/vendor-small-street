@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Small Street | Vendor Register</title>
@@ -17,16 +18,41 @@
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Londrina+Shadow&display=swap" rel="stylesheet">
-  </head>
-  <body class="containerIndex">
+</head>
+
+<body class="containerIndex">
 
     <header class="siteBrand">
-      <h1 class="siteBrand__Header">Small Street</h1>
-      <p class="siteBrand__subtitle">-- Vendor --</p>
+        <h1 class="siteBrand__Header">Small Street</h1>
+        <p class="siteBrand__subtitle">-- Vendor --</p>
     </header>
 
     <main>
+        <form onsubmit="onRegisterSubmit" class="registerForm">
+            <div>
+                <label for="username">Vendor Name: <abbr title="required" aria-label="required"> * </abbr></label>
+                <input id="username" type="text" name="username">
+            </div>
+            <div>
+                <label for="username">Vendor Email: <abbr title="required" aria-label="required"> * </abbr></label>
+                <input id="username" type="text" name="username">
+            </div>
+            <div>
+                <label for="username">Vendor Phone: <abbr title="required" aria-label="required"> * </abbr></label>
+                <input id="username" type="text" name="username">
+            </div>
+            <div>
+                <label for="username">Vendor Password: <abbr title="required" aria-label="required"> * </abbr></label>
+                <input id="username" type="text" name="username">
+            </div>
+            <div>
+                <label for="username">Confirm Password: <abbr title="required" aria-label="required"> * </abbr></label>
+                <input id="username" type="text" name="username">
+            </div>
+            <input type="submit" value="Register">
+        </form>
     </main>
-    
-  </body>
+
+</body>
+
 </html>
