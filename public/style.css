@@ -1,27 +1,30 @@
-body{
+body {
     background-image: url('./img/background.png');
     font-family: 'Dosis', sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
-h1{
+
+h1 {
     font-family: 'Londrina Shadow', cursive;
 }
-button{
+
+button {
     font-family: 'Londrina Shadow', cursive;
     font-family: inherit;
 }
-input{
+
+input {
     font-family: 'Dosis', sans-serif;
     padding: .5em;
 }
 
-.containerIndex{
+.containerIndex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,66 +35,89 @@ input{
 }
 
 /* #region Index Page */
-    /* --------Site Brand --------- */
-    .siteBrand__Header{
-        margin: 0;
-    }
-    .siteBrand__subtitle{
-        font-size: .9rem;
-        margin-top: -.5em;
-        margin-bottom: 2em;
-        text-align: center;
-    }
-    /* --------Site Brand --------- */
+/* --------Site Brand --------- */
+.siteBrand__Header {
+    margin: 0;
+}
 
-    /* --------Links---------------- */
-    .loginLinks{
-        /* display: block; */
-        text-align: center;
-        margin-bottom: .25em;
-        background-color: #444141;
-        color: white;
-        padding: .5em;
-        border-radius: 3px;
-        box-shadow: 1px 1px 2px 0px #b8b0b0;
-    }
-    .loginLinks:hover,.loginLinks:focus{
-        text-decoration: underline;
-    }
-    .loginLinks:active{
-        background-color: white;
-        color: #444141;
-    }
-    /* --------Links---------------- */
+.siteBrand__subtitle {
+    font-size: .9rem;
+    margin-top: -.5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+/* --------Site Brand --------- */
+
+/* --------Links---------------- */
+.loginLinks {
+    /* display: block; */
+    text-align: center;
+    margin-bottom: .25em;
+    background-color: #444141;
+    color: white;
+    padding: .5em;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 0px #b8b0b0;
+}
+
+.loginLinks:hover,
+.loginLinks:focus {
+    text-decoration: underline;
+}
+
+.loginLinks:active {
+    background-color: white;
+    color: #444141;
+}
+
+/* --------Links---------------- */
 /* #endregion Index Page */
 
 /* #region Register Page */
-.formRow{
-    display: flex;
-}
-.registerForm fieldset{
+
+.registerForm fieldset,
+.signinForm fieldset {
     margin-bottom: 2rem;
     padding: 1.5rem;
+    border-radius: 5px;
 }
-.registerForm legend{
+
+.registerForm legend,
+.signinForm legend {
     font-weight: bold;
 }
-.registerForm label{
+
+.registerForm label,
+.signinForm label {
     margin-bottom: .25em;
     display: block;
 }
-.registerForm .textInput{
+
+.registerForm .textInput,
+.signinForm .textInput {
     width: 12rem;
     margin-bottom: 1.2em;
     border-width: 1px;
+    border-radius: 3px;
 }
-.registerForm__submit{
+
+.registerForm .submit,
+.signinForm .submit {
     background-color: #5a5a5a;
     color: white;
     padding: 1em;
     border-radius: 3px;
     border-width: 1px;
     text-align: center;
+}
+
+.registerForm .submit:hover,
+.signinForm .submit:hover,
+.registerForm .submit:focus,
+.signinForm .submit:focus {
+    background-color: white;
+    color: #5a5a5a;
 }
 
 /* #endregion Register Page */

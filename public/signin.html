@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Small Street | Vendor Sign In</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.2.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.2.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Londrina+Shadow&display=swap" rel="stylesheet">
+</head>
+
+<body class="containerIndex">
+
+    <header class="siteBrand">
+        <h1 class="siteBrand__Header">Small Street</h1>
+        <p class="siteBrand__subtitle">-- Vendor --</p>
+    </header>
+
+    <main>
+        <form onsubmit="onRegisterSubmit" class="signinForm" name="signinForm">
+            <fieldset>
+                <legend>Sign In</legend>
+                <div>
+                    <label for="vendor-email">Vendor Email: <abbr title="required" aria-label="required"> *
+                        </abbr></label>
+                    <input type="email" name="vendor-email" class="textInput" required>
+                </div>
+                <div>
+                    <label for="password">Vendor Password: <abbr title="required" aria-label="required"> *
+                        </abbr></label>
+                    <input type="password" name="password" class="textInput" required>
+                </div>
+            </fieldset>
+            <div style="display: flex;justify-content: center;">
+                <input class="submit" type="submit" value="Sign In">
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
