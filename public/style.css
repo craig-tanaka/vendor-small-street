@@ -193,6 +193,7 @@ nav {
 }
 .navBtn>img {
     width: 1.5rem;
+    padding: .2rem;
 }
 .products{
     display: flex;
@@ -201,13 +202,16 @@ nav {
 }
 .product{
     width: 40vw;
+    cursor: pointer;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .productImg{
-    width: 5rem;
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
 }
 .productName{
     /* text-align: center; */
