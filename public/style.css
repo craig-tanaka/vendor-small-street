@@ -194,4 +194,22 @@ nav {
 .navBtn>img {
     width: 1.5rem;
 }
+.products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product{
+    width: 40vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productImg{
+    width: 5rem;
+}
+.productName{
+    /* text-align: center; */
+}
 /* #endregion Home Page */
