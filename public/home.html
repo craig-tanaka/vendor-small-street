@@ -2,25 +2,32 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Small Street | Vendor Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Small Street | Vendor Login</title>
 
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/7.2.2/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/7.2.2/firebase-auth.js"></script>
-  <script defer src="/__/firebase/7.2.2/firebase-database.js"></script>
-  <script defer src="/__/firebase/7.2.2/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/7.2.2/firebase-storage.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.2.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.2.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
 
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Dosis|Londrina+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Londrina+Shadow&display=swap" rel="stylesheet">
 </head>
 
-<body class="containerIndex">
+<body>
+
+    <nav>
+        
+        <button class="navBtn" id=""><img src="./img/navdrawer_icon.png"></button>
+        <button class="navBtn"><img src="./img/add_vector.png"></button>
+        
+    </nav>
 
     <aside id="sidebar" class="sidebar">
         <header class="sidebar__header">
@@ -43,28 +50,28 @@
                 </div>
             </section>
             <section class="sidebar__linksSection">
-                    <div class="sidebar__link">
-                        <img src="./img/receipts-vector.png" class="sidebar__linkImg">
-                        <span class="sidebar__linkText">Receipts</span>
-                    </div>
-                    <div class="sidebar__link">
-                        <img src="./img/analytics-vector.png" class="sidebar__linkImg">
-                        <span class="sidebar__linkText">Analytics</span>
-                    </div>
+                <div class="sidebar__link">
+                    <img src="./img/receipts-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Receipts</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/analytics-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Analytics</span>
+                </div>
             </section>
             <section class="sidebar__linksSection">
-                    <div class="sidebar__link">
-                        <img src="./img/about-vector.png" class="sidebar__linkImg">
-                        <span class="sidebar__linkText">About Us</span>
-                    </div>
-                    <div class="sidebar__link">
-                        <img src="./img/profile-vector.png" class="sidebar__linkImg">
-                        <span class="sidebar__linkText">Profile</span>
-                    </div>
-                    <div class="sidebar__link">
-                        <img src="./img/logout-vector.png" class="sidebar__linkImg">
-                        <span class="sidebar__linkText">Logout</span>
-                    </div>
+                <div class="sidebar__link">
+                    <img src="./img/about-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">About Us</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/profile-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Profile</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/logout-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Logout</span>
+                </div>
             </section>
         </main>
     </aside>

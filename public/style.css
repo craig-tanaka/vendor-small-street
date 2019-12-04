@@ -36,7 +36,7 @@ input {
 }
 
 /* #region Sidebar */
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -48,51 +48,50 @@ input {
 
     background-color: #f5e4e4cc;
 
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: column;
     box-sizing: border-box;
-    /* color: white; */
 }
-.sidebar__header{
+.sidebar__header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 3rem 0;
 }
-.sidebar__vendorImg{
+.sidebar__vendorImg {
     width: 60%;
     margin: 0 auto;
     border-radius: .3rem;
 }
-.sidebar__vendorName{
+.sidebar__vendorName {
     margin: .5em 0;
     color: #444141;
 }
-.sidebar__main{
+.sidebar__main {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.sidebar__linksSection{
+.sidebar__linksSection {
     /* flex: 1; */
     /* display: flex;
     flex-direction: column;
     justify-content: space-between; */
 }
-.sidebar__link{
+.sidebar__link {
     margin-bottom: 1em;
 
     display: flex;
     align-items: center;
 }
-.sidebar__linkImg{
+.sidebar__linkImg {
     width: 1.5rem;
     margin-right: 1rem;
 }
 /* #endregion Sidebar */
-
 
 /* #region Index Page */
 /* --------Site Brand --------- */
@@ -183,5 +182,16 @@ input {
 /* #endregion Register Page */
 
 /* #region Home Page */
-
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.navBtn{
+    background-color: transparent;
+    border: none;
+}
+.navBtn>img {
+    width: 1.5rem;
+}
 /* #endregion Home Page */
