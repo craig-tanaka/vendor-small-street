@@ -186,6 +186,7 @@ nav {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .navBtn{
     background-color: transparent;
@@ -194,6 +195,13 @@ nav {
 .navBtn>img {
     width: 1.5rem;
     padding: .2rem;
+}
+#page-home__products-search{
+    width: 100%;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    border-width: 1px;
 }
 .products{
     display: flex;
