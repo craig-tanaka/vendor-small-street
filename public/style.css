@@ -240,3 +240,26 @@ nav {
     /* text-align: center; */
 }
 /* #endregion Home Page */
+
+/* #region Product Page */
+.page-product__product-image{
+    width: 80vw;
+    margin: 1rem 10vw;
+}
+.page-product__product-name{
+    text-align: center;
+}
+.page-product__product-description{
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
+}
+.page-product__cta-row{
+    display: flex;
+    justify-content: space-between;
+
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+/* #endregion Product Page */

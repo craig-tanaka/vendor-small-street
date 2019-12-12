@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Small Street | Vendor Login</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.2.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.2.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="./js/app.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Londrina+Shadow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+
+        <button class="navBtn" id="navDrawerBtn"><img src="./img/navdrawer_icon.png"></button>
+        <button class="navBtn"><img src="./img/add_vector.png"></button>
+        <input id="page-home__products-search" type="text" placeholder="Search For Product">
+    </nav>
+
+
+    <div id="sidebar-overlay"></div>
+    <aside id="sidebar" class="sidebar">
+        <button class="navBtn" id="close-drawer-btn">
+            <img src="./img/close_drawer_vector.png" alt="">
+        </button>
+        <header class="sidebar__header">
+            <img src="./img/Checkers.webp" alt="" class="sidebar__vendorImg">
+            <h3 class="sidebar__vendorName">Checkers Hyper</h3>
+        </header>
+        <main class="sidebar__main">
+            <section class="sidebar__linksSection">
+                <div class="sidebar__link">
+                    <img src="./img/home-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Home</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/products-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Products</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/order-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Orders</span>
+                </div>
+            </section>
+            <section class="sidebar__linksSection">
+                <div class="sidebar__link">
+                    <img src="./img/receipts-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Receipts</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/analytics-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Analytics</span>
+                </div>
+            </section>
+            <section class="sidebar__linksSection">
+                <div class="sidebar__link">
+                    <img src="./img/about-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">About Us</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/profile-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Profile</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/logout-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Logout</span>
+                </div>
+            </section>
+        </main>
+    </aside>
+
+    <main>
+        <img src="./img/products/airpods.jpg" alt="Airfly" class="page-product__product-image">
+        <div class="page-product__product-details-container">
+            <h2 class="page-product__product-name">AirFly</h2>
+            <p class="page-product__product-description">
+                AirPods are wireless Bluetooth earbuds created by Apple. In addition to playing audio, AirPods feature a built-in microphone that filters out background noise, which allows taking phone calls and talking to  Apple's digital assistant, Siri. Additionally, built-in accelerometers and optical sensors can detect taps and in-ear placement, which enables automatic pausing when they are taken out of the ears.
+            </p>
+            <div class="page-product__cta-row">
+                <div class="page-product__product-price">
+                    $1 200
+                </div>
+                <div class="page-product__product-add2cart">
+                    +
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
