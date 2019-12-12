@@ -36,12 +36,23 @@ input {
 }
 
 /* #region Sidebar */
+#sidebar-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.599);
+}
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     width: 60vw;
     height: 100vh;
+    z-index: 2;
     padding: 1rem;
 
     box-shadow: 0px 9px 32px 2px #b8b0b0cc;
