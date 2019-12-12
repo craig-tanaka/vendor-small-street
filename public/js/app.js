@@ -13,4 +13,10 @@ if(document.querySelector('#sidebar-overlay')){
         document.querySelector('#sidebar-overlay').style.display = 'none';
     })
 }
+if(document.querySelector('#close-drawer-btn')){
+    document.querySelector('#close-drawer-btn').addEventListener('click', (event)=>{
+        sidebar.style.display = 'none';
+        document.querySelector('#sidebar-overlay').style.display = 'none';
+    })
+}
     
