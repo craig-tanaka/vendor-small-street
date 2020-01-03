@@ -1,3 +1,7 @@
+:root {
+    --primary-colour: #444141;
+}
+
 body {
     background-image: url('./img/background.png');
     font-family: 'Dosis', sans-serif;
@@ -98,7 +102,7 @@ input {
 
 .sidebar__vendorName {
     margin: .5em 0;
-    color: #444141;
+    color: var(--primary-colour);
 }
 
 .sidebar__main {
@@ -150,7 +154,7 @@ input {
     /* display: block; */
     text-align: center;
     margin-bottom: .25em;
-    background-color: #444141;
+    background-color: var(--primary-colour);
     color: white;
     padding: .5em;
     border-radius: 3px;
@@ -164,7 +168,7 @@ input {
 
 .loginLinks:active {
     background-color: white;
-    color: #444141;
+    color: var(--primary-colour);
 }
 
 /* --------Links---------------- */
@@ -220,10 +224,34 @@ input {
 
 /* #region Home Page */
 nav {
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+nav.pc {
+    background-color: var(--primary-colour);
+    color: white;
+}
+
+.nav-brand {
+    font-size: 1.7rem;
+}
+
+.pc-nav__account-options {
+    position: absolute;
+    top: 6.5rem;
+    background-color: var(--primary-colour);
+    margin-left: -2.2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 0px #444141c4;
+}
+
+.account-options-link {
+    display: block;
 }
 
 .navBtn {
