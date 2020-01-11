@@ -250,7 +250,7 @@ nav.pc {
 
 .pc-nav__account-options {
     position: absolute;
-    right: 4.5rem;
+    right: 11.5vw;
     background-color: var(--primary-colour);
     color: white;
     margin-left: -2.2rem;
@@ -260,6 +260,32 @@ nav.pc {
 
     display: none;
 }
+
+@media (min-width: 980px) {
+    .pc-nav__account-options {
+        right: 12.5vw;
+    }
+}
+
+@media (min-width: 1300px) {
+    .pc-nav__account-options {
+        right: 13vw;
+    }
+}
+
+@media (min-width: 1440px) {
+    .pc-nav__account-options {
+        right: 13.5vw;
+    }
+}
+
+@media (min-width: 1680px) {
+    .pc-nav__account-options {
+        right: 14.5vw;
+    }
+}
+
+
 
 .account-options-link {
     display: block;
