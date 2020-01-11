@@ -240,18 +240,36 @@ nav.pc {
     font-size: 1.7rem;
 }
 
+.pc-nav__account-icon {
+    cursor: pointer;
+}
+
 .pc-nav__account-options {
     position: absolute;
-    top: 6.5rem;
+    right: 4.5rem;
     background-color: var(--primary-colour);
+    color: white;
     margin-left: -2.2rem;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 1px 1px 3px 0px #444141c4;
+
+    display: none;
 }
 
 .account-options-link {
     display: block;
+}
+
+.account-options-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #44414152;
+
+    display: none;
 }
 
 .navBtn {
