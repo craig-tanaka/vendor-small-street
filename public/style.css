@@ -244,6 +244,10 @@ nav.pc {
     cursor: pointer;
 }
 
+.pc-nav__account-icon>img {
+    width: 2rem;
+}
+
 .pc-nav__account-options {
     position: absolute;
     right: 4.5rem;
