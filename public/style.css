@@ -312,15 +312,23 @@ nav.pc {
     padding: .2rem;
 }
 
-#page-home__products-search {
-    width: 100%;
-    margin: 0 1rem;
-    margin-top: 1rem;
+.page-home__products-search {
+
     border-radius: 3px;
     border-width: 1px;
 }
 
-.products {
+.mobile>.page-home__products-search {
+    width: 100%;
+    margin: 0 1rem;
+    margin-top: 1rem;
+}
+
+.pc>.page-home__products-search {
+    width: 2rem;
+}
+
+.pc>.products {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
