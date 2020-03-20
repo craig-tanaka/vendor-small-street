@@ -336,7 +336,7 @@ nav.pc {
 
 /* ____body_____ */
 
-.pc>.products {
+.products {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
