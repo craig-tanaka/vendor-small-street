@@ -83,7 +83,7 @@ input {
 }
 
 #close-drawer-btn {
-    width: 1rem;
+    margin: 0 auto;
     float: right;
 }
 
