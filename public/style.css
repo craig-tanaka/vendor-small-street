@@ -227,6 +227,7 @@ nav.pc {
 
 .nav-brand {
     font-size: 1.7rem;
+    /* width: 20%; */
 }
 
 .pc-nav__account-icon {
@@ -248,6 +249,19 @@ nav.pc {
     box-shadow: 1px 1px 3px 0px #444141c4;
 
     display: none;
+}
+
+nav.pc .nav-searchbar {
+    width: 60%;
+}
+
+nav.pc .page-home__products-search {
+    width: 100%;
+}
+
+.searchbar__navlinks {
+    display: flex;
+    justify-content: space-around;
 }
 
 @media (min-width: 980px) {
