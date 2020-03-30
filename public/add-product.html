@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Small Street | Vendor Login</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.2.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.2.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.2.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="./js/app.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Londrina+Shadow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+
+        <button class="navBtn" id="navDrawerBtn"><img src="./img/navdrawer_icon.png"></button>
+        <button class="navBtn"><img src="./img/add_vector.png"></button>
+    </nav>
+
+
+    <div id="sidebar-overlay"></div>
+    <aside id="sidebar" class="sidebar">
+        <button class="navBtn" id="close-drawer-btn">
+            <img src="./img/close_drawer_vector.png" alt="">
+        </button>
+        <header class="sidebar__header">
+            <img src="./img/Checkers.webp" alt="" class="sidebar__vendorImg">
+            <h3 class="sidebar__vendorName">Checkers Hyper</h3>
+        </header>
+        <main class="sidebar__main">
+            <section class="sidebar__linksSection">
+                <div class="sidebar__link">
+                    <img src="./img/home-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Home</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/order-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Orders</span>
+                </div>
+            </section>
+            <section class="sidebar__linksSection">
+                <div class="sidebar__link">
+                    <img src="./img/receipts-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Receipts</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/analytics-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Analytics</span>
+                </div>
+            </section>
+            <section class="sidebar__linksSection">
+                <div class="sidebar__link">
+                    <img src="./img/about-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">About Us</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/profile-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Profile</span>
+                </div>
+                <div class="sidebar__link">
+                    <img src="./img/logout-vector.png" class="sidebar__linkImg">
+                    <span class="sidebar__linkText">Logout</span>
+                </div>
+            </section>
+        </main>
+    </aside>
+
+    <main class="add-product-main">
+        <form action="" class="add-product-form">
+            <h4 class="form-header">Please Enter Product Details</h4>
+
+            <table>
+                <tr>
+                    <td>
+                        <input type="file" id="real-image-input" accept="image/*">
+                        <button type="button" id="browse-btn"
+                            onclick="document.querySelector('#real-image-input').click();">Select
+                            Image: </button>
+                    </td>
+                    <td>
+                        <div id="product-image-preview">No Image Selected</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="product-name">Product Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" class="form-input" id="product-name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Product Category :</label>
+                    </td>
+                    <td>
+                        <select id="product-category" class="form-input">
+                            <option value="Clothes">Clothes</option>
+                            <option value="Phones & Computers">Phones & Computers</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Product Brand :</label>
+                    </td>
+                    <td>
+                        <input type="text" class="form-input" id="product-brand">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Price :</label>
+                    </td>
+                    <td>
+                        <input type="number" class="form-input" id="product-price">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Description :</label>
+                    </td>
+                    <td>
+                        <textarea id="product-description" class="form-input" rows="5"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Tags :</label></td>
+                    <td>
+                        <textarea id="product-tags" placeholder="eg : Versace, Watch, Casio" id="" class="form-input"
+                            rows="5"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="btn-container">
+                <button type="submit" id="">Submit</button>
+            </div>
+
+            <input type="reset" value="" id="form-reset" style="background-color: transparent;border: 0;">
+
+        </form>
+    </main>
+
+
+</body>
+
+</html>
