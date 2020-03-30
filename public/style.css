@@ -3,8 +3,8 @@
 }
 
 body {
-    background-image: url('./img/background.png');
-    font-family: 'Dosis', sans-serif;
+    background-image: url("./img/background.png");
+    font-family: "Dosis", sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
@@ -15,17 +15,17 @@ a {
 }
 
 h1 {
-    font-family: 'Londrina Shadow', cursive;
+    font-family: "Londrina Shadow", cursive;
 }
 
 button {
-    font-family: 'Londrina Shadow', cursive;
+    font-family: "Londrina Shadow", cursive;
     font-family: inherit;
 }
 
 input {
-    font-family: 'Dosis', sans-serif;
-    padding: .5em;
+    font-family: "Dosis", sans-serif;
+    padding: 0.5em;
 }
 
 .containerIndex {
@@ -85,11 +85,11 @@ input {
 .sidebar__vendorImg {
     width: 60%;
     margin: 0 auto;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
 }
 
 .sidebar__vendorName {
-    margin: .5em 0;
+    margin: 0.5em 0;
     color: var(--primary-colour);
 }
 
@@ -129,8 +129,8 @@ input {
 }
 
 .siteBrand__subtitle {
-    font-size: .9rem;
-    margin-top: -.5em;
+    font-size: 0.9rem;
+    margin-top: -0.5em;
     margin-bottom: 2em;
     text-align: center;
 }
@@ -141,10 +141,10 @@ input {
 .loginLinks {
     /* display: block; */
     text-align: center;
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
     background-color: var(--primary-colour);
     color: white;
-    padding: .5em;
+    padding: 0.5em;
     border-radius: 3px;
     box-shadow: 1px 1px 2px 0px #b8b0b0;
 }
@@ -178,7 +178,7 @@ input {
 
 .registerForm label,
 .signinForm label {
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
     display: block;
 }
 
@@ -213,7 +213,7 @@ input {
 /* #region Home Page */
 /* ______Nav_______ */
 nav {
-    padding: .5rem;
+    padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -234,7 +234,7 @@ nav.pc {
     cursor: pointer;
 }
 
-.pc-nav__account-icon>img {
+.pc-nav__account-icon > img {
     width: 1.5rem;
 }
 
@@ -288,8 +288,6 @@ nav.pc .page-home__products-search {
     }
 }
 
-
-
 .account-options-link {
     display: block;
 }
@@ -310,31 +308,29 @@ nav.pc .page-home__products-search {
     border: none;
 }
 
-.navBtn>img {
+.navBtn > img {
     width: 1.5rem;
-    padding: .2rem;
+    padding: 0.2rem;
 }
 
 .page-home__products-search {
-
     border-radius: 3px;
     border-width: 1px;
 }
 
-.mobile>.page-home__products-search {
+.mobile > .page-home__products-search {
     width: 100%;
     margin: 0 1rem;
     margin-top: 1rem;
 }
 
-.pc>.page-home__products-search {
+.pc > .page-home__products-search {
     width: 13rem;
 }
 
-.pc-nav__new-product>img {
+.pc-nav__new-product > img {
     width: 1.5rem;
 }
-
 
 /* ____body_____ */
 
@@ -392,19 +388,30 @@ nav.pc .page-home__products-search {
 
 /* #endregion Product Page */
 
-@media(max-width: 767px) {
+/* @media (max-width: 767px) {
     .pc {
         display: none;
     }
 
     .nav-link {
-        margin-top: .2rem;
+        margin-top: 0.2rem;
     }
-}
+} */
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
+    html {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    body {
+        width: 768px;
+        margin: 0 auto;
+        box-shadow: 0px 1px 5px 0px black;
+    }
     .mobile {
-        display: none;
+        /* display: none; */
     }
 
     .product {
