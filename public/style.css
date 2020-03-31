@@ -455,7 +455,7 @@ nav.pc .page-home__products-search {
     width: 10rem;
     height: 5rem;
     background-color: white;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
