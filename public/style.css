@@ -490,7 +490,7 @@ nav.pc .page-home__products-search {
     }
 } */
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     html {
         display: flex;
         flex-direction: column;
