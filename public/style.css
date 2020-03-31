@@ -19,7 +19,8 @@ h1 {
     font-family: "Londrina Shadow", cursive;
 }
 
-button {
+button,
+.navBtn {
     font-family: "Londrina Shadow", cursive;
     font-family: inherit;
 
@@ -321,7 +322,6 @@ nav.pc .page-home__products-search {
 
 .navBtn > img {
     width: 1.5rem;
-    padding: 0.2rem;
 }
 
 .page-home__products-search {
