@@ -2,6 +2,9 @@
 :root {
     --primary-colour: #444141;
 }
+* {
+    font-family: Dosis !important;
+}
 
 body {
     background-image: url("./img/background.png");
@@ -29,7 +32,7 @@ button,
     background-color: var(--primary-colour);
     color: white;
     padding: 0.5em;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 1px 1px 2px 0px #b8b0b0;
 }
 
