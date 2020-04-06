@@ -1,8 +1,7 @@
-try{
+try {
     window.db = firebase.firestore();
     window.storageRef = firebase.storage().ref();
-}
-catch(ReferenceError){
+} catch (ReferenceError) {
     console.log('Firebase not found');
 }
 
@@ -26,7 +25,7 @@ let ImageName = '';
 let fileExt = '';
 let DocRef = {};
 
-productImagePreview.addEventListener('click', event=>{
+productImagePreview.addEventListener('click', event => {
     realImageInput.click();
 })
 
@@ -41,8 +40,8 @@ realImageInput.addEventListener('change', () => {
     image = realImageInput.files[0];
     ImageName = truncated;
     fileExt = re.exec(truncated)[1];
-    productImagePreview.style.backgroundImage= `url(${ImageUrl})`;
-    productImagePreview.style.backgroundColor= 'initial';
+    productImagePreview.style.backgroundImage = `url(${ImageUrl})`;
+    productImagePreview.style.backgroundColor = 'initial';
     productImagePreview.innerHTML = '';
 });
 
@@ -61,50 +60,52 @@ form.onsubmit = event => {
 }
 
 function validateForm() {
-//  implement form validation logic
+    //  implement form validation logic
 }
 
-function uploadDocument(){
+// Get tags from Product name and brand
+function uploadDocument() {
     db.collection("products").add({
-        ProductName: productNameInput.value,
-        Price: productPriceInput.value,
-        Brand: productBrandInput.value,
-        Category: productCategoryInput.value,
-        Description: productDescriptionInput.value,
-        Tags: productTagsInput.value.toLowerCase().split(/[ .,]+/),
-        UploadTimestamp: firebase.firestore.Timestamp.now().seconds
-    })
-    .then(function (docRef) {
-        logProgress(`Product details upload finished.`);
-        DocRef = docRef;
-        logProgress(`Begining Image Upload.`);
-        uploadImage();
-    })
-    .catch(function (error) {
-        logProgress(`Product details upload failed. Please try again in a few minutes or contact developer`);
-        console.error("Error adding document: ", error);
-    });
+            ProductName: productNameInput.value,
+            Price: productPriceInput.value,
+            Brand: productBrandInput.value,
+            Category: productCategoryInput.value,
+            Description: productDescriptionInput.value,
+            Tags: productTagsInput.value.toLowerCase().split(/[ .,]+/),
+            UploadTimestamp: firebase.firestore.Timestamp.now().seconds
+        })
+        .then(function (docRef) {
+            logProgress(`Product details upload finished.`);
+            DocRef = docRef;
+            logProgress(`Begining Image Upload.`);
+            uploadImage();
+        })
+        .catch(function (error) {
+            logProgress(`Product details upload failed. Please try again in a few minutes or contact developer`);
+            console.error("Error adding document: ", error);
+        });
 }
-function uploadImage(){
+
+function uploadImage() {
     let uploadTask = storageRef.child('product-images/' + DocRef.id + '/00.' + fileExt).put(image);
 
-    uploadTask.on('state_changed', function(snapshot){
+    uploadTask.on('state_changed', function (snapshot) {
         // Observe state change events such as progress, pause, and resume
         // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
         var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
         logProgress(`Image Upload is ${progress.toPrecision(3)}% done...`);
 
-        if(snapshot.state === firebase.storage.TaskState.PAUSED)
+        if (snapshot.state === firebase.storage.TaskState.PAUSED)
             logProgress('Image Uploaded Paused');
-      }, function(error) {
-          logProgress('upload unsuccessful. Please try again in a few minutes or contact developer;');
-          // Handle unsuccessful uploads
-      }, function() {
+    }, function (error) {
+        logProgress('upload unsuccessful. Please try again in a few minutes or contact developer;');
+        // Handle unsuccessful uploads
+    }, function () {
         // Handle successful uploads on complete
         logProgress('Image upload successful');
-        
-        
-        setTimeout(()=>{
+
+
+        setTimeout(() => {
             document.querySelector('main').style.display = 'flex';
             document.querySelector('.loader-container').style.display = 'none';
             formResetBtn.click();
@@ -112,9 +113,9 @@ function uploadImage(){
             productImagePreview.style.backgroundImage = '';
             productImagePreview.style.backgroundColor = 'white';
         }, 1000)
-      });
+    });
 }
 
-function logProgress (message) {
+function logProgress(message) {
     document.querySelector('.loader-text').innerHTML = message;
 }
