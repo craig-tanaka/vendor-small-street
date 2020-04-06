@@ -11,6 +11,10 @@ body {
     font-family: "Dosis", sans-serif;
     box-sizing: border-box;
     margin: 0;
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 a {
@@ -455,9 +459,9 @@ nav.pc .page-home__products-search {
     font-family: Dosis;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-
+    overflow-x: hidden;
+    overflow-y: auto;
     padding: 0 1rem;
     /* padding-top: 140px; */
 }
