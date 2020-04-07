@@ -563,6 +563,7 @@ nav.pc .page-home__products-search {
     }
 
     body {
+        min-height: 50vh;
         width: 768px;
         margin: 0 auto;
         box-shadow: 0px 1px 5px 0px black;
@@ -584,5 +585,12 @@ nav.pc .page-home__products-search {
 @media (min-width: 1920px) {
     .product {
         width: 10vw;
+    }
+}
+
+@media (max-height: 300px) {
+    body {
+        box-shadow: none;
+        height: 100vh;
     }
 }

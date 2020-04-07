@@ -51,7 +51,7 @@ form.onsubmit = event => {
 
     // validateForm();
     logProgress(`Uploading Product Details .....`);
-    document.querySelector('main').style.display = 'none';
+    document.querySelector('.add-product-main').style.display = 'none';
     document.querySelector('.loader-container').style.display = 'initial';
 
     uploadDocument();
