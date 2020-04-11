@@ -41,7 +41,9 @@ exports.deleteNewReference = functions.firestore
 exports.deleteProductImages = functions.firestore
     .document(`products/{productID}`)
     .onDelete((change, context) => {
-        const { productID } = context.params;
+        const {
+            productID
+        } = context.params;
         return admin.storage().bucket().deleteFiles({
             prefix: `product-images/${productID}`
         });
@@ -151,14 +153,14 @@ exports.convertImageToJpeg = functions.storage.object().onFinalize(async (object
         })
 
     return bucket.file(outputFilePath).setMetadata({
-        metadata: {
-            converted: true
-        }
-    })
-    .then(metadata => {
-        console.log('Updated Metadata........');
-        return console.log(metadata);
-    })
+            metadata: {
+                converted: true
+            }
+        })
+        .then(metadata => {
+            console.log('Updated Metadata........');
+            return console.log(metadata);
+        })
 
 });
 
@@ -170,8 +172,9 @@ exports.onUserDelete = functions.auth.user().onDelete((user) => {
 
 exports.onUserSignUp = functions.auth.user().onCreate((user) => {
     //  TODO send user greeting email
+    // TODO make different functions for vendor & frontend apps
     console.log(`Creating user, ${user.displayName} cart`);
     return admin.firestore().doc(`/carts/${user.uid}`).set({
         Products: []
     });
-  });
+});
