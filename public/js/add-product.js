@@ -49,7 +49,7 @@ realImageInput.addEventListener('change', () => {
 form.onsubmit = event => {
     event.preventDefault();
 
-    // validateForm();
+    // TODO: validateForm();
     logProgress(`Uploading Product Details .....`);
     document.querySelector('.add-product-main').style.display = 'none';
     document.querySelector('.loader-container').style.display = 'initial';
@@ -108,7 +108,7 @@ function uploadImage() {
 
 
         setTimeout(() => {
-            document.querySelector('main').style.display = 'flex';
+            document.querySelector('main.add-product-main').style.display = 'flex';
             document.querySelector('.loader-container').style.display = 'none';
             formResetBtn.click();
             realImageInput.value = '';
