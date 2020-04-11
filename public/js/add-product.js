@@ -99,7 +99,9 @@ function uploadImage() {
             logProgress('Image Uploaded Paused');
     }, function (error) {
         logProgress('upload unsuccessful. Please try again in a few minutes or contact developer;');
-        // Handle unsuccessful uploads
+        // TODO: Handle unsuccessful uploads
+        // TODO: add go-back button to retry whole upload
+        // TODO: delete already uploaded document
     }, function () {
         // Handle successful uploads on complete
         logProgress('Image upload successful');
