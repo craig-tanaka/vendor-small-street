@@ -178,3 +178,5 @@ exports.onUserSignUp = functions.auth.user().onCreate((user) => {
         Products: []
     });
 });
+
+// Todo create on image delete function
